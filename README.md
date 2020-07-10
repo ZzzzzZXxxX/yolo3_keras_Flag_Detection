@@ -31,7 +31,8 @@ python yolo_images.py
 #### step 2
 - 执行xml_to_data.py 生成 kitti_simple_label.txt
 ```
-python xml_to_data.py
+python xml_to_data.py # 如果自己数据集 请根据自己数据进行更改代码
+# 生成的kitti_simple_label.txt 格式为 图片path，box，类别id，...
 ```
 #### step 3
 -  k-means 聚类算法生成对应自己样本的 anchor box 尺寸 生成 my_anchors.txt
